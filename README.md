@@ -1,2 +1,2 @@
 # Proyecto-Bloom
-Este repositorio es diseñado para la asignatura de Programación y diseño de aplicaciones 
+Este desarrollo web está diseñado para ofrecer servicios de maquillaje y vender productos de belleza.
