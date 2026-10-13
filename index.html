@@ -26,59 +26,48 @@
 <!-- la etiqueta title es para establecer el nombre que quiero que me encuentren en la web -->
 </head>
 <body>
-
 <!--Encabezado - HEADER-->
 <header class="sitio-header">
 
     <div class="container header-inner">
-     <a href="#inicio" class="logo">
-            <span class="logo-ícono">💄</span>
+    <a href="#inicio" class="logo">
+         <span class="logo-ícono">💄</span>
             Bloom
          </a>
-    
-
     <nav class="main-nav">
         <ul>
            <li>
                 <a href="#inicio">Inicio</a>
             </li>
-
             <li>
                 <a href="#Productos">Productos</a>
             </li>
-
             <li>
                 <a href="#nosotros">About us</a>
             </li>
-
             <li>
                 <a href="#contacto">Contacto</a>
             </li>
         </ul>
-
-
     </nav>
+<!--boton menu movil-->
+<button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+      </button>
+       </div>
 
-<button id="menu-toggle" class="menu-toggle" 
-aria-label="Abrir menú" aria-expanded="false" 
-aria-controls="mobile-menu">☰</button>
-</div>
-
-
+<!--navegación movil-->
 <nav id="mobile-menu" class="mobile-nav">
       <ul>
              <li>
                 <a href="#inicio">Inicio</a>
             </li>
-
             <li>
                 <a href="#Productos">Productos</a>
             </li>
-
             <li>
                 <a href="#nosotros">About us</a>
             </li>
-
             <li>
                 <a href="#contacto">Contacto</a>
             </li>
@@ -86,39 +75,120 @@ aria-controls="mobile-menu">☰</button>
      
     </nav>
 
-
-
    </header>
 
-
+<!-- Inicio Main (Principal) del desarrollo web-->
 
     <main>
 
+
          <!-- SECCIÓN CARUSSEL -->
 
-    <section id="carrusel" class ="carousel-section container">
-        <h2>Blooms.</h2>
+    <section id="inicio" class ="hero-section">
         <div class="carousel-track" id="carouseltrackebc">
+
+
             <!--Primera imagen hero-->
             <div class="carousel.slide">
                 <img src="img/hero1.jpg" alt="imagen InFrame hero">
+                 <div class="slide-overlay">
+                        <span class="badge">Belleza Premium </span>
+                        <h1>Tu belleza <span class="highlight-yellow"> Tu estilo</span></h1>
+                        <p>Descubre nuestra colección de maquillaje y resalta tu belleza con productos que te harán brillar en cada ocasión..</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
             </div>
+
             <!--Segunda imagen hero-->
             <div class="carousel.slide">
                 <img src="img/hero2.jpg" alt="imagen InFrame1 hero">
+                 <div class="slide-overlay">
+                        <span class="badge">Belleza Exclusiva</span>
+                        <h1>Brilla con tu propio <span class="highlight-yellow">Estilo</span></h1>
+                        <p>Encuentra el maquillaje perfecto para resaltar tu belleza y expresar tu personalidad en cada ocasión.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir productos</a>
+                    </div>
             </div>
             <!--Tercera imagen hero-->
             <div class="carousel.slide">
                 <img src="img/hero3.jpg" alt="imagen InFrame2 hero">
+                 <div class="slide-overlay">
+                        <span class="badge">Tu Belleza, Nuestra Pasión</span>
+                        <h1>Resalta lo <span class="highlight-yellow">mejor de ti </span></h1>
+                        <p>Desde tonos naturales hasta looks atrevidos, encuentra todo lo
+                           que necesitas para crear tu estilo con nuestra colección de maquillaje.</p>
+                        <a href="#servicios" class="btn-hero">ver colección</a>
+                    </div>
             </div>
     
         </div>
-
-
+ <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+<!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
     </section>
+    <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS Productos</h2>
+                    <h3>Aprende a utilizar los productos</h3>
+                </div>
+<div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Difrentes tonos</h4>
+                        <p>Adaptate a los productos que necesitas.</p>
+                    </div>
 
+   <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Labiales segun tu ph</h4>
+                        <p>Conoce como es tu ph y cual seria tu labial ideal.</p>
+                    </div>
+<div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Encuentra tu tono perfecto</h4>
+                        <p>Encuentra tu tono ideal para cualquier tipo de evento.</p>
+                    </div>
+ </div>
+ </div>
+        </section>
 
-<p>This is a paragraph.</p>
+ <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Experiencia cine en familia">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por el maquillaje.</h3>
+                    <p>En <strong>Bloom</strong>, creemos que el maquillaje es una forma de expresar tu personalidad y 
+                      resaltar tu belleza y Ofrecemos una variedad de productos para que encuentres tus favoritos,
+                       experimentes con nuevos estilos y te sientas increíble en cada ocasión.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Proyectos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
